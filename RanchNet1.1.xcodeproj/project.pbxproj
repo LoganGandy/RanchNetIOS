@@ -16,6 +16,7 @@
 		665CDCD51F9E451D004717D0 /* RanchNet1_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665CDCD41F9E451D004717D0 /* RanchNet1_1Tests.swift */; };
 		665CDCE01F9E451D004717D0 /* RanchNet1_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665CDCDF1F9E451D004717D0 /* RanchNet1_1UITests.swift */; };
 		665CDCEE1F9E4DB0004717D0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665CDCED1F9E4DB0004717D0 /* ThirdViewController.swift */; };
+		66F75A9E1FCDA04E0047055E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F75A9D1FCDA04E0047055E /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		665CDCDF1F9E451D004717D0 /* RanchNet1_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RanchNet1_1UITests.swift; sourceTree = "<group>"; };
 		665CDCE11F9E451D004717D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		665CDCED1F9E4DB0004717D0 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		66F75A9D1FCDA04E0047055E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F75A9E1FCDA04E0047055E /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				665CDCD31F9E451D004717D0 /* RanchNet1.1Tests */,
 				665CDCDE1F9E451D004717D0 /* RanchNet1.1UITests */,
 				665CDCBB1F9E451D004717D0 /* Products */,
+				66F75A9C1FCDA04E0047055E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +133,14 @@
 				665CDCE11F9E451D004717D0 /* Info.plist */,
 			);
 			path = RanchNet1.1UITests;
+			sourceTree = "<group>";
+		};
+		66F75A9C1FCDA04E0047055E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66F75A9D1FCDA04E0047055E /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +212,11 @@
 					665CDCB91F9E451D004717D0 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					665CDCCF1F9E451D004717D0 = {
 						CreatedOnToolsVersion = 9.0;
